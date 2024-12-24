@@ -88,7 +88,8 @@
 <body>
     <div class="container">
         <h1>Compress Your File</h1>
-        <form action="/upload" method="post" enctype="multipart/form-data">
+        <!-- Update the action to point to the Netlify function -->
+        <form action="/.netlify/functions/compress" method="post" enctype="multipart/form-data">
             <input type="file" name="file" required />
             <button type="submit">Upload & Compress</button>
         </form>
